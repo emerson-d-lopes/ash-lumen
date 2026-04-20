@@ -43,7 +43,7 @@ const lightEntries = flatten(light);
 
 const tokensCss = `/* ==========================================================================
    Ash Lumen Design Tokens (generated — do not edit)
-   Source: tokens/*.json  |  https://github.com/emersonloustau/ash-lumen
+   Source: tokens/*.json  |  https://github.com/emerson-d-lopes/ash-lumen
    ========================================================================== */
 
 :root {
@@ -83,7 +83,7 @@ writeFileSync(resolve(root, 'dist/tokens.css'), tokensCss);
 
 const indexCss = `/* ==========================================================================
    Ash Lumen Design System
-   https://github.com/emersonloustau/ash-lumen
+   https://github.com/emerson-d-lopes/ash-lumen
    ========================================================================== */
 
 @import "./tokens.css";
@@ -91,6 +91,49 @@ const indexCss = `/* ===========================================================
 `;
 
 writeFileSync(resolve(root, 'dist/index.css'), indexCss);
+
+// ---------------------------------------------------------------------------
+// Build tokens.js — typed JS/TS export of all token values
+// ---------------------------------------------------------------------------
+
+function flattenJs(obj, prefix = '') {
+  const result = {};
+  for (const [key, val] of Object.entries(obj)) {
+    if (key.startsWith('$')) continue;
+    const path = prefix ? `${prefix}-${key}` : key;
+    if (val.$value !== undefined) {
+      result[path] = val.$value;
+    } else {
+      Object.assign(result, flattenJs(val, path));
+    }
+  }
+  return result;
+}
+
+const tokens = {
+  base: flattenJs(base),
+  dark: flattenJs(dark),
+  light: flattenJs(light),
+};
+
+const tokensJs = `// Ash Lumen Design Tokens (generated — do not edit)
+// Source: tokens/*.json  |  https://github.com/emerson-d-lopes/ash-lumen
+
+/** Theme-independent tokens (typography, spacing, radius, transitions) */
+export const base = ${JSON.stringify(tokens.base, null, 2)};
+
+/** Dark theme tokens (colors, shadows) */
+export const dark = ${JSON.stringify(tokens.dark, null, 2)};
+
+/** Light theme tokens (colors, shadows) */
+export const light = ${JSON.stringify(tokens.light, null, 2)};
+
+/** All tokens grouped by theme */
+const tokens = { base, dark, light };
+export default tokens;
+`;
+
+writeFileSync(resolve(root, 'dist/tokens.js'), tokensJs);
 
 // ---------------------------------------------------------------------------
 // Copy src → dist (components.css, tailwind.css)
@@ -101,6 +144,7 @@ copyFileSync(resolve(root, 'src/tailwind.css'), resolve(root, 'dist/tailwind.css
 
 const count = baseEntries.length + darkEntries.length + lightEntries.length;
 console.log(`✓ ${count} token declarations → dist/tokens.css`);
+console.log(`✓ dist/tokens.js`);
 console.log(`✓ dist/index.css`);
 console.log(`✓ dist/components.css`);
 console.log(`✓ dist/tailwind.css`);

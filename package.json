@@ -6,17 +6,22 @@
   "keywords": ["design-system", "css", "tokens", "monochromatic", "tailwind", "dark-mode"],
   "license": "MIT",
   "author": "Emerson Loustau",
-  "homepage": "https://github.com/emersonloustau/ash-lumen",
+  "homepage": "https://github.com/emerson-d-lopes/ash-lumen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/emersonloustau/ash-lumen.git"
+    "url": "git+https://github.com/emerson-d-lopes/ash-lumen.git"
   },
   "files": ["dist", "tokens", "src"],
+  "sideEffects": ["**/*.css"],
   "exports": {
     ".": "./dist/index.css",
     "./tokens": "./dist/tokens.css",
     "./components": "./dist/components.css",
-    "./tailwind": "./dist/tailwind.css"
+    "./tailwind": "./dist/tailwind.css",
+    "./tokens/base": "./tokens/base.json",
+    "./tokens/dark": "./tokens/dark.json",
+    "./tokens/light": "./tokens/light.json",
+    "./tokens/js": "./dist/tokens.js"
   },
   "scripts": {
     "build": "node scripts/build-tokens.js",

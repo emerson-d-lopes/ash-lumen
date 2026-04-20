@@ -11,6 +11,8 @@
      @import "ash-lumen/tailwind";
    ========================================================================== */
 
+@layer ash-lumen {
+
 ::selection {
   background: var(--color-border);
 }
@@ -238,3 +240,5 @@ select.input {
 .syn-comment   { color: var(--color-syntax-comment); }
 .syn-parameter { color: var(--color-syntax-parameter); }
 .syn-text      { color: var(--color-text); }
+
+} /* end @layer ash-lumen */
