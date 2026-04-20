@@ -1,0 +1,434 @@
+/* ==========================================================================
+   @ash-lumen/react — Component Styles (generated — do not edit)
+   Requires ash-lumen (CSS tokens) to be imported first.
+
+   Usage:
+     import 'ash-lumen'
+     import '@ash-lumen/react/styles'
+   ========================================================================== */
+
+.al-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--al-space-2);
+  font-family: var(--al-font-family-sans);
+  font-size: var(--al-font-size-sm);
+  font-weight: var(--al-font-weight-medium);
+  line-height: var(--al-line-height-tight);
+  padding: var(--al-space-2) var(--al-space-4);
+  border-radius: var(--al-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--al-transition-fast);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.al-btn:focus-visible {
+  outline: 2px solid var(--al-color-focus-ring);
+  outline-offset: 2px;
+}
+
+.al-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Variants */
+.al-btn-primary {
+  background: var(--al-color-accent);
+  color: var(--al-color-bg);
+}
+.al-btn-primary:hover {
+  background: var(--al-color-accent-hover);
+}
+
+.al-btn-secondary {
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
+  border-color: var(--al-color-border);
+}
+.al-btn-secondary:hover {
+  background: var(--al-color-surface-raised);
+}
+
+.al-btn-ghost {
+  background: transparent;
+  color: var(--al-color-text-secondary);
+}
+.al-btn-ghost:hover {
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
+}
+
+.al-btn-danger {
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
+  border-color: var(--al-color-error);
+}
+.al-btn-danger:hover {
+  opacity: 0.8;
+}
+
+/* Sizes */
+.al-btn-sm {
+  font-size: var(--al-font-size-xs);
+  padding: var(--al-space-1) var(--al-space-3);
+}
+
+.al-btn-lg {
+  font-size: var(--al-font-size-base);
+  padding: var(--al-space-3) var(--al-space-6);
+}
+
+.al-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--al-space-1);
+  font-family: var(--al-font-family-mono);
+  font-size: var(--al-font-size-xs);
+  font-weight: var(--al-font-weight-medium);
+  line-height: var(--al-line-height-tight);
+  padding: var(--al-space-1) var(--al-space-2);
+  border-radius: var(--al-radius-full);
+  border: 1px solid var(--al-color-border);
+  background: var(--al-color-surface);
+  color: var(--al-color-text-secondary);
+  white-space: nowrap;
+}
+
+.al-badge-error {
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
+  border-color: transparent;
+}
+
+.al-badge-warning {
+  background: var(--al-color-warning-bg);
+  color: var(--al-color-warning);
+  border-color: transparent;
+}
+
+.al-badge-success {
+  background: var(--al-color-success-bg);
+  color: var(--al-color-success);
+  border-color: transparent;
+}
+
+.al-badge-info {
+  background: var(--al-color-info-bg);
+  color: var(--al-color-info);
+  border-color: transparent;
+}
+
+.al-alert {
+  display: flex;
+  flex-direction: column;
+  gap: var(--al-space-1);
+  padding: var(--al-space-3) var(--al-space-4);
+  border-radius: var(--al-radius-md);
+  font-size: var(--al-font-size-sm);
+  border-left: 3px solid;
+  font-family: var(--al-font-family-sans);
+}
+
+.al-alert-title {
+  font-weight: var(--al-font-weight-medium);
+  line-height: var(--al-line-height-tight);
+}
+
+.al-alert-description {
+  opacity: 0.9;
+  line-height: var(--al-line-height-normal);
+}
+
+.al-alert-info {
+  background: var(--al-color-info-bg);
+  color: var(--al-color-info);
+  border-color: var(--al-color-info);
+}
+
+.al-alert-success {
+  background: var(--al-color-success-bg);
+  color: var(--al-color-success);
+  border-color: var(--al-color-success);
+}
+
+.al-alert-warning {
+  background: var(--al-color-warning-bg);
+  color: var(--al-color-warning);
+  border-color: var(--al-color-warning);
+}
+
+.al-alert-error {
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
+  border-color: var(--al-color-error);
+}
+
+.al-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--al-color-surface);
+  border: 1px solid var(--al-color-border-subtle);
+  border-radius: var(--al-radius-md);
+  overflow: hidden;
+  font-family: var(--al-font-family-sans);
+}
+
+.al-card-raised {
+  background: var(--al-color-surface-raised);
+  box-shadow: var(--al-shadow-sm);
+}
+
+.al-card-interactive {
+  cursor: pointer;
+  transition: border-color var(--al-transition-normal), box-shadow var(--al-transition-normal);
+  text-decoration: none;
+  color: inherit;
+}
+.al-card-interactive:hover {
+  border-color: var(--al-color-border);
+  box-shadow: var(--al-shadow-md);
+}
+.al-card-interactive:focus-visible {
+  outline: 2px solid var(--al-color-focus-ring);
+  outline-offset: 2px;
+}
+
+.al-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--al-space-1);
+  padding: var(--al-space-6);
+  padding-bottom: 0;
+}
+
+.al-card-title {
+  font-size: var(--al-font-size-lg);
+  font-weight: var(--al-font-weight-semibold);
+  color: var(--al-color-accent);
+  line-height: var(--al-line-height-tight);
+}
+
+.al-card-description {
+  font-size: var(--al-font-size-sm);
+  color: var(--al-color-text-secondary);
+  line-height: var(--al-line-height-normal);
+}
+
+.al-card-content {
+  padding: var(--al-space-6);
+  flex: 1;
+}
+
+.al-card-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--al-space-3);
+  padding: var(--al-space-6);
+  padding-top: 0;
+}
+
+.al-input {
+  display: block;
+  width: 100%;
+  font-family: var(--al-font-family-sans);
+  font-size: var(--al-font-size-sm);
+  line-height: var(--al-line-height-normal);
+  padding: var(--al-space-2) var(--al-space-3);
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
+  border: 1px solid var(--al-color-border);
+  border-radius: var(--al-radius-md);
+  outline: none;
+  transition: border-color var(--al-transition-fast);
+}
+
+.al-input::placeholder {
+  color: var(--al-color-text-faint);
+}
+
+.al-input:focus {
+  border-color: var(--al-color-text-muted);
+}
+
+.al-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.al-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.al-label {
+  display: block;
+  font-family: var(--al-font-family-sans);
+  font-size: var(--al-font-size-sm);
+  font-weight: var(--al-font-weight-medium);
+  color: var(--al-color-text);
+  line-height: var(--al-line-height-tight);
+  cursor: default;
+  user-select: none;
+}
+
+.al-label[data-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.al-separator {
+  background: var(--al-color-border-subtle);
+  flex-shrink: 0;
+}
+
+.al-separator-horizontal {
+  height: 1px;
+  width: 100%;
+  margin: var(--al-space-4) 0;
+}
+
+.al-separator-vertical {
+  width: 1px;
+  height: 100%;
+  margin: 0 var(--al-space-4);
+}
+
+.al-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: color-mix(in srgb, var(--al-color-bg) 75%, transparent);
+  backdrop-filter: blur(4px);
+  z-index: 50;
+}
+
+.al-dialog-overlay[data-state="open"] {
+  animation: al-overlay-in 150ms ease;
+}
+
+.al-dialog-overlay[data-state="closed"] {
+  animation: al-overlay-out 150ms ease;
+}
+
+@keyframes al-overlay-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes al-overlay-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+.al-dialog-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--al-color-surface);
+  border: 1px solid var(--al-color-border);
+  border-radius: var(--al-radius-lg);
+  padding: var(--al-space-6);
+  box-shadow: var(--al-shadow-md);
+  width: 90vw;
+  max-width: 480px;
+  max-height: 85vh;
+  overflow-y: auto;
+  z-index: 51;
+  display: flex;
+  flex-direction: column;
+  gap: var(--al-space-4);
+  font-family: var(--al-font-family-sans);
+}
+
+.al-dialog-content:focus {
+  outline: none;
+}
+
+.al-dialog-content[data-state="open"] {
+  animation: al-dialog-in 150ms ease;
+}
+
+.al-dialog-content[data-state="closed"] {
+  animation: al-dialog-out 150ms ease;
+}
+
+@keyframes al-dialog-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes al-dialog-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.97);
+  }
+}
+
+.al-dialog-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--al-space-1);
+}
+
+.al-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--al-space-3);
+  margin-top: var(--al-space-2);
+}
+
+.al-dialog-title {
+  font-size: var(--al-font-size-lg);
+  font-weight: var(--al-font-weight-semibold);
+  color: var(--al-color-accent);
+  line-height: var(--al-line-height-tight);
+}
+
+.al-dialog-description {
+  font-size: var(--al-font-size-sm);
+  color: var(--al-color-text-secondary);
+  line-height: var(--al-line-height-normal);
+}
+
+.al-dialog-close {
+  position: absolute;
+  top: var(--al-space-4);
+  right: var(--al-space-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--al-radius-sm);
+  color: var(--al-color-text-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--al-transition-fast), color var(--al-transition-fast);
+}
+
+.al-dialog-close:hover {
+  background: var(--al-color-surface-raised);
+  color: var(--al-color-text);
+}
+
+.al-dialog-close:focus-visible {
+  outline: 2px solid var(--al-color-focus-ring);
+  outline-offset: 2px;
+}

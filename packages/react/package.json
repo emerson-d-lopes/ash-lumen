@@ -1,0 +1,50 @@
+{
+  "name": "@ash-lumen/react",
+  "version": "0.1.0",
+  "description": "Ash Lumen React components — accessible, token-based, built on Radix UI primitives.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Emerson Loustau",
+  "homepage": "https://github.com/emerson-d-lopes/ash-lumen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emerson-d-lopes/ash-lumen.git",
+    "directory": "packages/react"
+  },
+  "keywords": ["design-system", "react", "components", "radix", "accessible", "tokens", "monochromatic"],
+  "files": ["dist"],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles": "./dist/styles.css"
+  },
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "build": "tsup && node scripts/copy-css.js",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-separator": "^1.1.2",
+    "@radix-ui/react-slot": "^1.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}

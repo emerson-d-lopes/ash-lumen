@@ -1,0 +1,16 @@
+.al-separator {
+  background: var(--al-color-border-subtle);
+  flex-shrink: 0;
+}
+
+.al-separator-horizontal {
+  height: 1px;
+  width: 100%;
+  margin: var(--al-space-4) 0;
+}
+
+.al-separator-vertical {
+  width: 1px;
+  height: 100%;
+  margin: 0 var(--al-space-4);
+}

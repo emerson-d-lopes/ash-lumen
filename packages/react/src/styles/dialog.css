@@ -1,0 +1,133 @@
+.al-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: color-mix(in srgb, var(--al-color-bg) 75%, transparent);
+  backdrop-filter: blur(4px);
+  z-index: 50;
+}
+
+.al-dialog-overlay[data-state="open"] {
+  animation: al-overlay-in 150ms ease;
+}
+
+.al-dialog-overlay[data-state="closed"] {
+  animation: al-overlay-out 150ms ease;
+}
+
+@keyframes al-overlay-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes al-overlay-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+.al-dialog-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--al-color-surface);
+  border: 1px solid var(--al-color-border);
+  border-radius: var(--al-radius-lg);
+  padding: var(--al-space-6);
+  box-shadow: var(--al-shadow-md);
+  width: 90vw;
+  max-width: 480px;
+  max-height: 85vh;
+  overflow-y: auto;
+  z-index: 51;
+  display: flex;
+  flex-direction: column;
+  gap: var(--al-space-4);
+  font-family: var(--al-font-family-sans);
+}
+
+.al-dialog-content:focus {
+  outline: none;
+}
+
+.al-dialog-content[data-state="open"] {
+  animation: al-dialog-in 150ms ease;
+}
+
+.al-dialog-content[data-state="closed"] {
+  animation: al-dialog-out 150ms ease;
+}
+
+@keyframes al-dialog-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes al-dialog-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.97);
+  }
+}
+
+.al-dialog-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--al-space-1);
+}
+
+.al-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--al-space-3);
+  margin-top: var(--al-space-2);
+}
+
+.al-dialog-title {
+  font-size: var(--al-font-size-lg);
+  font-weight: var(--al-font-weight-semibold);
+  color: var(--al-color-accent);
+  line-height: var(--al-line-height-tight);
+}
+
+.al-dialog-description {
+  font-size: var(--al-font-size-sm);
+  color: var(--al-color-text-secondary);
+  line-height: var(--al-line-height-normal);
+}
+
+.al-dialog-close {
+  position: absolute;
+  top: var(--al-space-4);
+  right: var(--al-space-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--al-radius-sm);
+  color: var(--al-color-text-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--al-transition-fast), color var(--al-transition-fast);
+}
+
+.al-dialog-close:hover {
+  background: var(--al-color-surface-raised);
+  color: var(--al-color-text);
+}
+
+.al-dialog-close:focus-visible {
+  outline: 2px solid var(--al-color-focus-ring);
+  outline-offset: 2px;
+}

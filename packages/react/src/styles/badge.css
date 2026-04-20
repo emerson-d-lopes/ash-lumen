@@ -1,0 +1,39 @@
+.al-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--al-space-1);
+  font-family: var(--al-font-family-mono);
+  font-size: var(--al-font-size-xs);
+  font-weight: var(--al-font-weight-medium);
+  line-height: var(--al-line-height-tight);
+  padding: var(--al-space-1) var(--al-space-2);
+  border-radius: var(--al-radius-full);
+  border: 1px solid var(--al-color-border);
+  background: var(--al-color-surface);
+  color: var(--al-color-text-secondary);
+  white-space: nowrap;
+}
+
+.al-badge-error {
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
+  border-color: transparent;
+}
+
+.al-badge-warning {
+  background: var(--al-color-warning-bg);
+  color: var(--al-color-warning);
+  border-color: transparent;
+}
+
+.al-badge-success {
+  background: var(--al-color-success-bg);
+  color: var(--al-color-success);
+  border-color: transparent;
+}
+
+.al-badge-info {
+  background: var(--al-color-info-bg);
+  color: var(--al-color-info);
+  border-color: transparent;
+}

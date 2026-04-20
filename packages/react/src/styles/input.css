@@ -1,0 +1,48 @@
+.al-input {
+  display: block;
+  width: 100%;
+  font-family: var(--al-font-family-sans);
+  font-size: var(--al-font-size-sm);
+  line-height: var(--al-line-height-normal);
+  padding: var(--al-space-2) var(--al-space-3);
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
+  border: 1px solid var(--al-color-border);
+  border-radius: var(--al-radius-md);
+  outline: none;
+  transition: border-color var(--al-transition-fast);
+}
+
+.al-input::placeholder {
+  color: var(--al-color-text-faint);
+}
+
+.al-input:focus {
+  border-color: var(--al-color-text-muted);
+}
+
+.al-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.al-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.al-label {
+  display: block;
+  font-family: var(--al-font-family-sans);
+  font-size: var(--al-font-size-sm);
+  font-weight: var(--al-font-weight-medium);
+  color: var(--al-color-text);
+  line-height: var(--al-line-height-tight);
+  cursor: default;
+  user-select: none;
+}
+
+.al-label[data-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

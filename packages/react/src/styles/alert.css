@@ -1,0 +1,44 @@
+.al-alert {
+  display: flex;
+  flex-direction: column;
+  gap: var(--al-space-1);
+  padding: var(--al-space-3) var(--al-space-4);
+  border-radius: var(--al-radius-md);
+  font-size: var(--al-font-size-sm);
+  border-left: 3px solid;
+  font-family: var(--al-font-family-sans);
+}
+
+.al-alert-title {
+  font-weight: var(--al-font-weight-medium);
+  line-height: var(--al-line-height-tight);
+}
+
+.al-alert-description {
+  opacity: 0.9;
+  line-height: var(--al-line-height-normal);
+}
+
+.al-alert-info {
+  background: var(--al-color-info-bg);
+  color: var(--al-color-info);
+  border-color: var(--al-color-info);
+}
+
+.al-alert-success {
+  background: var(--al-color-success-bg);
+  color: var(--al-color-success);
+  border-color: var(--al-color-success);
+}
+
+.al-alert-warning {
+  background: var(--al-color-warning-bg);
+  color: var(--al-color-warning);
+  border-color: var(--al-color-warning);
+}
+
+.al-alert-error {
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
+  border-color: var(--al-color-error);
+}

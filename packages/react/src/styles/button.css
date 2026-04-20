@@ -1,0 +1,76 @@
+.al-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--al-space-2);
+  font-family: var(--al-font-family-sans);
+  font-size: var(--al-font-size-sm);
+  font-weight: var(--al-font-weight-medium);
+  line-height: var(--al-line-height-tight);
+  padding: var(--al-space-2) var(--al-space-4);
+  border-radius: var(--al-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--al-transition-fast);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.al-btn:focus-visible {
+  outline: 2px solid var(--al-color-focus-ring);
+  outline-offset: 2px;
+}
+
+.al-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Variants */
+.al-btn-primary {
+  background: var(--al-color-accent);
+  color: var(--al-color-bg);
+}
+.al-btn-primary:hover {
+  background: var(--al-color-accent-hover);
+}
+
+.al-btn-secondary {
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
+  border-color: var(--al-color-border);
+}
+.al-btn-secondary:hover {
+  background: var(--al-color-surface-raised);
+}
+
+.al-btn-ghost {
+  background: transparent;
+  color: var(--al-color-text-secondary);
+}
+.al-btn-ghost:hover {
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
+}
+
+.al-btn-danger {
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
+  border-color: var(--al-color-error);
+}
+.al-btn-danger:hover {
+  opacity: 0.8;
+}
+
+/* Sizes */
+.al-btn-sm {
+  font-size: var(--al-font-size-xs);
+  padding: var(--al-space-1) var(--al-space-3);
+}
+
+.al-btn-lg {
+  font-size: var(--al-font-size-base);
+  padding: var(--al-space-3) var(--al-space-6);
+}
