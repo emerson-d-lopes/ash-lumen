@@ -21,7 +21,7 @@ function flatten(obj, prefix = '') {
     if (key.startsWith('$')) continue;
     const path = prefix ? `${prefix}-${key}` : key;
     if (val.$value !== undefined) {
-      entries.push([`--${path}`, val.$value]);
+      entries.push([`--al-${path}`, val.$value]);
     } else {
       entries.push(...flatten(val, path));
     }

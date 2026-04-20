@@ -14,25 +14,25 @@
 @layer ash-lumen {
 
 ::selection {
-  background: var(--color-border);
+  background: var(--al-color-border);
 }
 
 /* ---------------------------------------------------------------------------
    Buttons
    --------------------------------------------------------------------------- */
 .btn {
-  font-family: var(--font-family-sans);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-md);
+  font-family: var(--al-font-family-sans);
+  font-size: var(--al-font-size-sm);
+  font-weight: var(--al-font-weight-medium);
+  padding: var(--al-space-2) var(--al-space-4);
+  border-radius: var(--al-radius-md);
   border: 1px solid transparent;
   cursor: pointer;
-  transition: all var(--transition-fast);
-  line-height: var(--line-height-tight);
+  transition: all var(--al-transition-fast);
+  line-height: var(--al-line-height-tight);
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: var(--al-space-2);
 }
 
 .btn:disabled {
@@ -41,38 +41,38 @@
 }
 
 .btn-primary {
-  background: var(--color-accent);
-  color: var(--color-bg);
+  background: var(--al-color-accent);
+  color: var(--al-color-bg);
 }
 
 .btn-primary:not(:disabled):hover {
-  background: var(--color-accent-hover);
+  background: var(--al-color-accent-hover);
 }
 
 .btn-secondary {
-  background: var(--color-surface);
-  color: var(--color-text);
-  border-color: var(--color-border);
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
+  border-color: var(--al-color-border);
 }
 
 .btn-secondary:not(:disabled):hover {
-  background: var(--color-surface-raised);
+  background: var(--al-color-surface-raised);
 }
 
 .btn-ghost {
   background: transparent;
-  color: var(--color-text-secondary);
+  color: var(--al-color-text-secondary);
 }
 
 .btn-ghost:not(:disabled):hover {
-  background: var(--color-surface);
-  color: var(--color-text);
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
 }
 
 .btn-danger {
-  background: var(--color-error-bg);
-  color: var(--color-error);
-  border-color: var(--color-error);
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
+  border-color: var(--al-color-error);
 }
 
 .btn-danger:not(:disabled):hover {
@@ -83,24 +83,24 @@
    Inputs
    --------------------------------------------------------------------------- */
 .input {
-  font-family: var(--font-family-sans);
-  font-size: var(--font-size-sm);
-  padding: var(--space-2) var(--space-3);
-  background: var(--color-surface);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  font-family: var(--al-font-family-sans);
+  font-size: var(--al-font-size-sm);
+  padding: var(--al-space-2) var(--al-space-3);
+  background: var(--al-color-surface);
+  color: var(--al-color-text);
+  border: 1px solid var(--al-color-border);
+  border-radius: var(--al-radius-md);
   outline: none;
   width: 100%;
-  transition: border-color var(--transition-fast);
+  transition: border-color var(--al-transition-fast);
 }
 
 .input::placeholder {
-  color: var(--color-text-faint);
+  color: var(--al-color-text-faint);
 }
 
 .input:focus {
-  border-color: var(--color-text-muted);
+  border-color: var(--al-color-text-muted);
 }
 
 .textarea {
@@ -116,39 +116,39 @@ select.input {
    Badges
    --------------------------------------------------------------------------- */
 .badge {
-  font-family: var(--font-family-mono);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  padding: var(--space-1) var(--space-2);
-  border-radius: var(--radius-full);
-  background: var(--color-surface);
-  color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
+  font-family: var(--al-font-family-mono);
+  font-size: var(--al-font-size-xs);
+  font-weight: var(--al-font-weight-medium);
+  padding: var(--al-space-1) var(--al-space-2);
+  border-radius: var(--al-radius-full);
+  background: var(--al-color-surface);
+  color: var(--al-color-text-secondary);
+  border: 1px solid var(--al-color-border);
   display: inline-flex;
   align-items: center;
 }
 
 .badge-error {
-  background: var(--color-error-bg);
-  color: var(--color-error);
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
   border-color: transparent;
 }
 
 .badge-warning {
-  background: var(--color-warning-bg);
-  color: var(--color-warning);
+  background: var(--al-color-warning-bg);
+  color: var(--al-color-warning);
   border-color: transparent;
 }
 
 .badge-success {
-  background: var(--color-success-bg);
-  color: var(--color-success);
+  background: var(--al-color-success-bg);
+  color: var(--al-color-success);
   border-color: transparent;
 }
 
 .badge-info {
-  background: var(--color-info-bg);
-  color: var(--color-info);
+  background: var(--al-color-info-bg);
+  color: var(--al-color-info);
   border-color: transparent;
 }
 
@@ -156,69 +156,69 @@ select.input {
    Cards
    --------------------------------------------------------------------------- */
 .card {
-  padding: var(--space-6);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--radius-md);
+  padding: var(--al-space-6);
+  background: var(--al-color-surface);
+  border: 1px solid var(--al-color-border-subtle);
+  border-radius: var(--al-radius-md);
 }
 
 .card-raised {
-  background: var(--color-surface-raised);
-  box-shadow: var(--shadow-sm);
+  background: var(--al-color-surface-raised);
+  box-shadow: var(--al-shadow-sm);
 }
 
 .card-interactive {
   cursor: pointer;
-  transition: all var(--transition-normal);
+  transition: all var(--al-transition-normal);
 }
 
 .card-interactive:hover {
-  border-color: var(--color-border);
-  box-shadow: var(--shadow-md);
+  border-color: var(--al-color-border);
+  box-shadow: var(--al-shadow-md);
 }
 
 /* ---------------------------------------------------------------------------
    Alerts
    --------------------------------------------------------------------------- */
 .alert {
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-md);
-  font-size: var(--font-size-sm);
+  padding: var(--al-space-3) var(--al-space-4);
+  border-radius: var(--al-radius-md);
+  font-size: var(--al-font-size-sm);
   border-left: 3px solid;
 }
 
 .alert-info {
-  background: var(--color-info-bg);
-  color: var(--color-info);
-  border-color: var(--color-info);
+  background: var(--al-color-info-bg);
+  color: var(--al-color-info);
+  border-color: var(--al-color-info);
 }
 
 .alert-success {
-  background: var(--color-success-bg);
-  color: var(--color-success);
-  border-color: var(--color-success);
+  background: var(--al-color-success-bg);
+  color: var(--al-color-success);
+  border-color: var(--al-color-success);
 }
 
 .alert-warning {
-  background: var(--color-warning-bg);
-  color: var(--color-warning);
-  border-color: var(--color-warning);
+  background: var(--al-color-warning-bg);
+  color: var(--al-color-warning);
+  border-color: var(--al-color-warning);
 }
 
 .alert-error {
-  background: var(--color-error-bg);
-  color: var(--color-error);
-  border-color: var(--color-error);
+  background: var(--al-color-error-bg);
+  color: var(--al-color-error);
+  border-color: var(--al-color-error);
 }
 
 /* ---------------------------------------------------------------------------
    Code Blocks
    --------------------------------------------------------------------------- */
 .code-block {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--radius-md);
-  padding: var(--space-6);
+  background: var(--al-color-surface);
+  border: 1px solid var(--al-color-border-subtle);
+  border-radius: var(--al-radius-md);
+  padding: var(--al-space-6);
   overflow-x: auto;
 }
 
@@ -227,18 +227,18 @@ select.input {
 }
 
 .code-block code {
-  font-family: var(--font-family-mono);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-relaxed);
+  font-family: var(--al-font-family-mono);
+  font-size: var(--al-font-size-sm);
+  line-height: var(--al-line-height-relaxed);
 }
 
 /* Syntax color utilities */
-.syn-keyword   { color: var(--color-syntax-keyword); }
-.syn-string    { color: var(--color-syntax-string); }
-.syn-function  { color: var(--color-syntax-function); }
-.syn-constant  { color: var(--color-syntax-constant); }
-.syn-comment   { color: var(--color-syntax-comment); }
-.syn-parameter { color: var(--color-syntax-parameter); }
-.syn-text      { color: var(--color-text); }
+.syn-keyword   { color: var(--al-color-syntax-keyword); }
+.syn-string    { color: var(--al-color-syntax-string); }
+.syn-function  { color: var(--al-color-syntax-function); }
+.syn-constant  { color: var(--al-color-syntax-constant); }
+.syn-comment   { color: var(--al-color-syntax-comment); }
+.syn-parameter { color: var(--al-color-syntax-parameter); }
+.syn-text      { color: var(--al-color-text); }
 
 } /* end @layer ash-lumen */

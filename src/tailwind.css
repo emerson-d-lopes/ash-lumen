@@ -19,63 +19,63 @@
 
    Colors resolve automatically for light/dark — no `dark:` prefix needed.
    Opacity modifiers (/30, /50) do not work with CSS variable colors.
-   Use color-mix() instead: color-mix(in srgb, var(--color-accent) 30%, transparent)
+   Use color-mix() instead: color-mix(in srgb, var(--al-color-accent) 30%, transparent)
    ========================================================================== */
 
 @theme inline {
   /* Backgrounds */
-  --color-bg: var(--color-bg);
-  --color-surface: var(--color-surface);
-  --color-surface-raised: var(--color-surface-raised);
+  --color-bg: var(--al-color-bg);
+  --color-surface: var(--al-color-surface);
+  --color-surface-raised: var(--al-color-surface-raised);
 
   /* Borders */
-  --color-border: var(--color-border);
-  --color-border-subtle: var(--color-border-subtle);
+  --color-border: var(--al-color-border);
+  --color-border-subtle: var(--al-color-border-subtle);
 
   /* Text */
-  --color-text: var(--color-text);
-  --color-text-secondary: var(--color-text-secondary);
-  --color-text-muted: var(--color-text-muted);
-  --color-text-faint: var(--color-text-faint);
+  --color-text: var(--al-color-text);
+  --color-text-secondary: var(--al-color-text-secondary);
+  --color-text-muted: var(--al-color-text-muted);
+  --color-text-faint: var(--al-color-text-faint);
 
   /* Accent */
-  --color-accent: var(--color-accent);
-  --color-accent-hover: var(--color-accent-hover);
-  --color-focus-ring: var(--color-focus-ring);
+  --color-accent: var(--al-color-accent);
+  --color-accent-hover: var(--al-color-accent-hover);
+  --color-focus-ring: var(--al-color-focus-ring);
 
   /* Semantic */
-  --color-error: var(--color-error);
-  --color-error-bg: var(--color-error-bg);
-  --color-warning: var(--color-warning);
-  --color-warning-bg: var(--color-warning-bg);
-  --color-success: var(--color-success);
-  --color-success-bg: var(--color-success-bg);
-  --color-info: var(--color-info);
-  --color-info-bg: var(--color-info-bg);
+  --color-error: var(--al-color-error);
+  --color-error-bg: var(--al-color-error-bg);
+  --color-warning: var(--al-color-warning);
+  --color-warning-bg: var(--al-color-warning-bg);
+  --color-success: var(--al-color-success);
+  --color-success-bg: var(--al-color-success-bg);
+  --color-info: var(--al-color-info);
+  --color-info-bg: var(--al-color-info-bg);
 
   /* Typography */
-  --font-sans: var(--font-family-sans);
-  --font-mono: var(--font-family-mono);
+  --font-sans: var(--al-font-family-sans);
+  --font-mono: var(--al-font-family-mono);
 
   /* Spacing — makes space-* tokens available as Tailwind values */
-  --spacing-0: var(--space-0);
-  --spacing-1: var(--space-1);
-  --spacing-2: var(--space-2);
-  --spacing-3: var(--space-3);
-  --spacing-4: var(--space-4);
-  --spacing-6: var(--space-6);
-  --spacing-8: var(--space-8);
-  --spacing-12: var(--space-12);
-  --spacing-16: var(--space-16);
-  --spacing-24: var(--space-24);
+  --spacing-0: var(--al-space-0);
+  --spacing-1: var(--al-space-1);
+  --spacing-2: var(--al-space-2);
+  --spacing-3: var(--al-space-3);
+  --spacing-4: var(--al-space-4);
+  --spacing-6: var(--al-space-6);
+  --spacing-8: var(--al-space-8);
+  --spacing-12: var(--al-space-12);
+  --spacing-16: var(--al-space-16);
+  --spacing-24: var(--al-space-24);
 
   /* Border radius */
-  --radius-sm: var(--radius-sm);
-  --radius-md: var(--radius-md);
-  --radius-lg: var(--radius-lg);
-  --radius-full: var(--radius-full);
+  --radius-sm: var(--al-radius-sm);
+  --radius-md: var(--al-radius-md);
+  --radius-lg: var(--al-radius-lg);
+  --radius-full: var(--al-radius-full);
 
   /* Shadows */
-  --shadow-sm: var(--shadow-sm);
-  --shadow-md: var(--shadow-md);
+  --shadow-sm: var(--al-shadow-sm);
+  --shadow-md: var(--al-shadow-md);
 }
