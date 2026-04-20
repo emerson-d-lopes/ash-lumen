@@ -1,0 +1,56 @@
+{
+  "font": {
+    "family": {
+      "mono": {
+        "$value": "'SF Mono', 'Fira Code', 'JetBrains Mono', ui-monospace, monospace",
+        "$type": "fontFamily"
+      },
+      "sans": {
+        "$value": "-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif",
+        "$type": "fontFamily"
+      }
+    },
+    "size": {
+      "xs": { "$value": "0.825rem", "$type": "dimension" },
+      "sm": { "$value": "0.9625rem", "$type": "dimension" },
+      "base": { "$value": "1.1rem", "$type": "dimension" },
+      "lg": { "$value": "1.2375rem", "$type": "dimension" },
+      "xl": { "$value": "1.375rem", "$type": "dimension" },
+      "2xl": { "$value": "1.65rem", "$type": "dimension" },
+      "3xl": { "$value": "2.2rem", "$type": "dimension" }
+    },
+    "weight": {
+      "normal": { "$value": "400", "$type": "fontWeight" },
+      "medium": { "$value": "500", "$type": "fontWeight" },
+      "semibold": { "$value": "600", "$type": "fontWeight" },
+      "bold": { "$value": "700", "$type": "fontWeight" }
+    }
+  },
+  "line-height": {
+    "tight": { "$value": "1.25", "$type": "number" },
+    "normal": { "$value": "1.5", "$type": "number" },
+    "relaxed": { "$value": "1.75", "$type": "number" }
+  },
+  "space": {
+    "0": { "$value": "0", "$type": "dimension" },
+    "1": { "$value": "0.25rem", "$type": "dimension" },
+    "2": { "$value": "0.5rem", "$type": "dimension" },
+    "3": { "$value": "0.75rem", "$type": "dimension" },
+    "4": { "$value": "1rem", "$type": "dimension" },
+    "6": { "$value": "1.5rem", "$type": "dimension" },
+    "8": { "$value": "2rem", "$type": "dimension" },
+    "12": { "$value": "3rem", "$type": "dimension" },
+    "16": { "$value": "4rem", "$type": "dimension" },
+    "24": { "$value": "6rem", "$type": "dimension" }
+  },
+  "radius": {
+    "sm": { "$value": "3px", "$type": "dimension" },
+    "md": { "$value": "6px", "$type": "dimension" },
+    "lg": { "$value": "10px", "$type": "dimension" },
+    "full": { "$value": "9999px", "$type": "dimension" }
+  },
+  "transition": {
+    "fast": { "$value": "120ms ease", "$type": "transition" },
+    "normal": { "$value": "200ms ease", "$type": "transition" }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$description": "Ash Lumen Light — light theme",
+  "color": {
+    "bg": { "$value": "#eeeeee", "$type": "color" },
+    "surface": { "$value": "#f0f0f0", "$type": "color" },
+    "surface-raised": { "$value": "#f8f8f8", "$type": "color" },
+    "border": { "$value": "#d0d0d0", "$type": "color" },
+    "border-subtle": { "$value": "#e8e8e8", "$type": "color" },
+
+    "text": { "$value": "#505050", "$type": "color" },
+    "text-secondary": { "$value": "#707070", "$type": "color" },
+    "text-muted": { "$value": "#909090", "$type": "color" },
+    "text-faint": { "$value": "#c0c0c0", "$type": "color" },
+
+    "accent": { "$value": "#404040", "$type": "color" },
+    "accent-hover": { "$value": "#303030", "$type": "color" },
+    "focus-ring": { "$value": "#d0d0d0", "$type": "color" },
+
+    "error": { "$value": "#806060", "$type": "color" },
+    "error-bg": { "$value": "#80606015", "$type": "color" },
+    "warning": { "$value": "#808060", "$type": "color" },
+    "warning-bg": { "$value": "#80806015", "$type": "color" },
+    "success": { "$value": "#607060", "$type": "color" },
+    "success-bg": { "$value": "#60706015", "$type": "color" },
+    "info": { "$value": "#607080", "$type": "color" },
+    "info-bg": { "$value": "#60708015", "$type": "color" },
+
+    "syntax-keyword": { "$value": "#7a4e4e", "$type": "color" },
+    "syntax-string": { "$value": "#436843", "$type": "color" },
+    "syntax-function": { "$value": "#404040", "$type": "color" },
+    "syntax-constant": { "$value": "#445068", "$type": "color" },
+    "syntax-comment": { "$value": "#b8b8b8", "$type": "color" },
+    "syntax-parameter": { "$value": "#6a4e4e", "$type": "color" },
+
+    "diff-added": { "$value": "#60706018", "$type": "color" },
+    "diff-removed": { "$value": "#80606018", "$type": "color" },
+
+    "scrollbar": { "$value": "#c0c0c040", "$type": "color" },
+    "scrollbar-hover": { "$value": "#b0b0b060", "$type": "color" }
+  },
+  "shadow": {
+    "sm": { "$value": "0 1px 3px #00000010", "$type": "shadow" },
+    "md": { "$value": "0 4px 12px #00000015", "$type": "shadow" }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$description": "Ash Lumen — dark theme",
+  "color": {
+    "bg": { "$value": "#161616", "$type": "color" },
+    "surface": { "$value": "#1a1a1a", "$type": "color" },
+    "surface-raised": { "$value": "#222222", "$type": "color" },
+    "border": { "$value": "#303030", "$type": "color" },
+    "border-subtle": { "$value": "#232323", "$type": "color" },
+
+    "text": { "$value": "#a0a0a0", "$type": "color" },
+    "text-secondary": { "$value": "#787878", "$type": "color" },
+    "text-muted": { "$value": "#585858", "$type": "color" },
+    "text-faint": { "$value": "#404040", "$type": "color" },
+
+    "accent": { "$value": "#b0b0b0", "$type": "color" },
+    "accent-hover": { "$value": "#c0c0c0", "$type": "color" },
+    "focus-ring": { "$value": "#353535", "$type": "color" },
+
+    "error": { "$value": "#a88080", "$type": "color" },
+    "error-bg": { "$value": "#a8808015", "$type": "color" },
+    "warning": { "$value": "#a0a080", "$type": "color" },
+    "warning-bg": { "$value": "#a0a08015", "$type": "color" },
+    "success": { "$value": "#80a080", "$type": "color" },
+    "success-bg": { "$value": "#80a08015", "$type": "color" },
+    "info": { "$value": "#8090a0", "$type": "color" },
+    "info-bg": { "$value": "#8090a015", "$type": "color" },
+
+    "syntax-keyword": { "$value": "#b09898", "$type": "color" },
+    "syntax-string": { "$value": "#889888", "$type": "color" },
+    "syntax-function": { "$value": "#b0b0b0", "$type": "color" },
+    "syntax-constant": { "$value": "#98a0a0", "$type": "color" },
+    "syntax-comment": { "$value": "#484848", "$type": "color" },
+    "syntax-parameter": { "$value": "#a09898", "$type": "color" },
+
+    "diff-added": { "$value": "#80a08020", "$type": "color" },
+    "diff-removed": { "$value": "#a8808020", "$type": "color" },
+
+    "scrollbar": { "$value": "#40404040", "$type": "color" },
+    "scrollbar-hover": { "$value": "#50505060", "$type": "color" }
+  },
+  "shadow": {
+    "sm": { "$value": "0 1px 3px #00000040", "$type": "shadow" },
+    "md": { "$value": "0 4px 12px #00000060", "$type": "shadow" }
+  }
+}

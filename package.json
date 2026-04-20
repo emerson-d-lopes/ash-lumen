@@ -1,0 +1,26 @@
+{
+  "name": "ash-lumen",
+  "version": "0.1.0",
+  "description": "Ash Lumen — monochromatic CSS design system. Token-based, framework-agnostic, light/dark aware.",
+  "type": "module",
+  "keywords": ["design-system", "css", "tokens", "monochromatic", "tailwind", "dark-mode"],
+  "license": "MIT",
+  "author": "Emerson Loustau",
+  "homepage": "https://github.com/emersonloustau/ash-lumen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emersonloustau/ash-lumen.git"
+  },
+  "files": ["dist", "tokens", "src"],
+  "exports": {
+    ".": "./dist/index.css",
+    "./tokens": "./dist/tokens.css",
+    "./components": "./dist/components.css",
+    "./tailwind": "./dist/tailwind.css"
+  },
+  "scripts": {
+    "build": "node scripts/build-tokens.js",
+    "prepublishOnly": "node scripts/build-tokens.js"
+  },
+  "packageManager": "pnpm@10.27.0"
+}
